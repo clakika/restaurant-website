@@ -40,9 +40,11 @@ export class Reservation extends Component {
                                 <input type="text" name="email"></input>
                             </div>
 
-                            <label>notes on reservation</label>
-                            <textarea type="text" name="notes" ></textarea>
-                            
+                            <div className="Reservation_Notes">
+                                <label>notes on reservation</label>
+                                <textarea type="text" name="notes" ></textarea>
+                            </div>
+
                             <button className="BookBtn">book</button>
                 
                         </form>
