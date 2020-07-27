@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Home from './Layout/Home';
-import Reservation from './Layout/Reservation';
-import Services from './Layout/Services';
-import Contacts from './Layout/Contacts';
+import Home from './Layout/Home/Home';
+import Reservation from './Layout/Reservation/Reservation';
+import Services from './Layout/Services/Services';
+import Contacts from './Layout/Contacts/Contacts';
+
+import divider from './img/divider.svg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
-        <Reservation />
-        <Services />
-        <Contacts />
+        <Home className="App_Component"/>
+        <img src={divider}
+             className="Divider"></img>
+        <Reservation className="App_Component"/>
+        <Services className="App_Component"/>
+        <Contacts className="App_Component"/>
       </div>
     );
   }

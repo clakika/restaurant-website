@@ -1,0 +1,20 @@
+.App {
+  padding: 1rem;
+  background-color: cadetblue;
+  box-sizing: border-box;
+  color: rgb(146, 43, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App_Component {
+  padding: 2rem;
+  background-color: brown;
+}
+
+.Divider {
+  width: 15%;
+  margin-top: 1rem;
+}

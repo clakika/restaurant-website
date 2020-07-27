@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import serviceImgOne from '../img/services-image1.png';
-import serviceImgTwo from '../img/services-image2.png';
+import serviceImgOne from '../../img/services-image1.png';
+import serviceImgTwo from '../../img/services-image2.png';
 
 
 export class Services extends Component {

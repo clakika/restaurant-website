@@ -1,0 +1,60 @@
+.Navigation  {
+    background-color: coral;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigation > div:first-child {
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.Navigation div:first-child {
+    margin-left: auto;
+}
+
+.NavList {
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    font-size: 20px
+}
+
+.NavList_Item {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-table;
+    margin: 0 2rem 0 2rem;
+    letter-spacing: 2px;
+}
+
+.NavList_Item a{
+    text-decoration: none;
+    color: rgb(146, 43, 33);
+}
+
+.NavigationLogo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.Header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.Header_Image {
+    width: 40%;
+
+}
+
+.Header_Title {
+    font-size: 4rem;
+    align-self: center;
+    margin-right: 1rem;
+}
+

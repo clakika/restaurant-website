@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import contactsImage from '../img/contacts-image.png';
+import contactsImage from '../../img/contacts-image.png';
 
 export class Contacts extends Component {
     render() {
