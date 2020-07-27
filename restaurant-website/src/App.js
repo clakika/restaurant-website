@@ -16,7 +16,11 @@ class App extends Component {
         <img src={divider}
              className="Divider"></img>
         <Reservation className="App_Component"/>
+        <img src={divider}
+             className="Divider"></img>
         <Services className="App_Component"/>
+        <img src={divider}
+             className="Divider"></img>
         <Contacts className="App_Component"/>
       </div>
     );
