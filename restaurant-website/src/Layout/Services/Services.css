@@ -3,7 +3,7 @@
     max-width: 65rem;
     height: 37rem;
     justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
 }
 
 .Services_Title {
@@ -38,7 +38,8 @@
 }
 
 .Services_Image {
-    width: 37%;
+    height: 80%;
+    width: auto;
 }
 
 

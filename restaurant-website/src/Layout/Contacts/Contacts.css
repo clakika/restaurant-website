@@ -1,0 +1,46 @@
+.Contacts_Section {
+    width: 70%;
+    height: 37rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.Contacts_Title {
+    position: absolute;
+    font-size: 2em;
+    transform: translate(14vw, 7vw);
+    background-color: white;
+    border: 5px solid white;
+    z-index: 100;
+    max-width: 19rem;
+}
+
+.Contacts_SubText {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.Contacts_Image {
+    transform: scale(0.7) translate(27vw, -8vw);
+    width: auto;
+    z-index: 10;
+}
+
+.Contacts_Socials {
+    shape-outside: circle(50%);
+    position: absolute;
+    width: 16vw;
+    transform: translate(9vw, -30vw);
+    text-align: center;
+}
+
+.Contacts_Questions {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.Copyright {
+    padding: 1em;
+    margin-top: -2rem;
+    text-align: center;
+}
