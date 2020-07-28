@@ -1,0 +1,45 @@
+.Services_Container {
+    display: flex;
+    max-width: 65rem;
+    height: 37rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.Services_Title {
+    font-size: 2em;
+    background-color: white;
+}
+
+.Services_SubText {
+    font-size: 1.5em;
+}
+
+.Services_Link {
+    font-weight: 600;
+    color: rgb(146, 43, 33)
+}
+
+.Services_Text {
+    order: 2;
+    text-align: center;
+    width: 20rem;
+    padding: 2rem;
+    align-self: center;
+    line-height: 1.5;
+}
+
+.Services_ImageOne {
+    order: 1;
+}
+
+.Services_ImageTwo {
+    order: 3;
+}
+
+.Services_Image {
+    width: 37%;
+}
+
+
+
