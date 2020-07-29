@@ -4,10 +4,20 @@ import ReservationImage from '../../img/reservation-image.png';
 import './Reservation.css';
 
 export class Reservation extends Component {
+    
+    onClick = (e) => {
+        e.preventDefault()
+        console.log('onclick..')
+    }
+
     render() {
 
         return (
             <div>
+                <div className={"OverlayMessageBooking" + (this.props.clicked ? '-none' : '-visible')}></div>
+                <div className="BookedMessage">
+                        <p className="BookedMessage_Text">Thank you for your reservation!<br></br>Shortly you will receive a confirmation email.<br></br>See you soon! :)</p>
+                </div>
                 <div className="Reservation">
                     <div className="Reservation_LeftSection">
                         <img src={ReservationImage}
@@ -46,8 +56,7 @@ export class Reservation extends Component {
                                 <label>notes on reservation</label>
                                 <textarea type="text" name="notes"></textarea>
                             </div>
-                            <button className="BookBtn">book</button>
-                
+                            <button className="BookBtn"><a href="#" onClick={this.onClick}>book</a></button>
                         </form>
                     </div>
                 </div>
