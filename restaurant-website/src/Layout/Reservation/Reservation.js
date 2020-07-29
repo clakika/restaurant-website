@@ -17,34 +17,35 @@ export class Reservation extends Component {
                         <h2 className="Reservation_Title">visit Italy through your palate</h2>
                         <p className="Reservation_SubText">our authentic Italian pizzas are homemade and created with a lot of love.
                             let yourself to pleasure:</p>
+                            <hr className="Line"></hr>
+                            <p className="RequiredFields">Fields with <span className="Asteriks">*</span> are required</p>
                         <form className="Reservation_Form">
                             <div className="FormLeft">
-                                <label>first name*</label>
-                                <input type="text" name="first-name"></input>
+                                <label>first name<span className="Asteriks">*</span></label>
+                                <input type="text" name="first-name" required></input>
 
-                                <label>date*</label>
-                                <input type="text" name="date"></input>
+                                <label>date<span className="Asteriks">*</span></label>
+                                <input type="date" name="date" required></input>
 
-                                <label>party size*</label>
-                                <input type="text" name="party-size"></input>
+                                <label>party size<span className="Asteriks">*</span></label>
+                                <input type="number" min="1" max="30" name="party-size" required></input>
                             </div>
                             
                             <div className="FormRight">
-                                <label>last name*</label>
-                                <input type="text" name="last-name"></input>
+                                <label>last name<span className="Asteriks">*</span></label>
+                                <input type="text" name="last-name" required></input>
                             
-                                <label>time*</label>
-                                <input type="text" name="time"></input>
+                                <label>time<span className="Asteriks">*</span></label>
+                                <input type="time" name="time" required></input>
 
-                                <label>email*</label>
-                                <input type="text" name="email"></input>
+                                <label>email<span className="Asteriks">*</span></label>
+                                <input type="email" name="email" required></input>
                             </div>
 
                             <div className="Reservation_Notes">
                                 <label>notes on reservation</label>
-                                <textarea type="text" name="notes" ></textarea>
+                                <textarea type="text" name="notes"></textarea>
                             </div>
-
                             <button className="BookBtn">book</button>
                 
                         </form>
