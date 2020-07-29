@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 import Home from './Layout/Home/Home';
 import Reservation from './Layout/Reservation/Reservation';
 import Services from './Layout/Services/Services';

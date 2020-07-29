@@ -4,6 +4,12 @@ import './Home.css';
 import logo from '../../img/logo.svg';
 import headerImage from '../../img/header-img.png';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faPhone, faAt, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
+
+
 export class Home extends Component {
     render() {
         return (
@@ -17,10 +23,9 @@ export class Home extends Component {
                         <li className="NavList_Item"><a href="#">services</a></li>
                         <li className="NavList_Item"><a href="#">contacts</a></li>
 
-                        <i>O</i>
-                        <i>O</i>
-                        <i>O</i>
-                        <i>O</i>
+                        <a href="#"><FontAwesomeIcon icon={faPhone} className="Home_Icon"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faAt} className="Home_Icon"/></a>
+                        <a href="#"><FontAwesomeIcon icon={faMapMarkedAlt} className="Home_Icon"/></a>
                     </ul>
                 </div>
                 <div className="Header">

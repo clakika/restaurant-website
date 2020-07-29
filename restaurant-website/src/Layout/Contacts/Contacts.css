@@ -1,66 +1,4 @@
-/*.Contacts_Section {
-    max-width: 100%;
-    height: 42.5vw;
-    position: relative;
-    background-color: violet;
-}
-
-.Contacts_Title {
-    position: absolute;
-    font-size: 2em;
-    transform: translate(14vw, 7vw);
-    background-color: white;
-    border: 5px solid white;
-    z-index: 100;
-    max-width: 19rem;
-}
-
-.Contacts_SubText {
-    font-size: 1.2em;
-    text-align: right;
-}
-
-.Contacts_Image {
-    position: absolute;
-    transform: translate(27vw, -8vw);
-    width: 65%;
-    z-index: 10;   
-}
-
-.Contacts_Socials {
-    shape-outside: circle(50%);
-    position: absolute;
-    width: 16vw;
-    transform: translate(9vw, -30vw);
-    text-align: center;
-}
-
-.Contacts_Questions {
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.Restaurant_Map {
-    width: 80%;
-    height: 60%;
-    border-radius: 8%;
-    position: relative;
-}
-
-.Map_Icon {
-    position: absolute;
-    transform: translateX(-1em);
-}
-
-.Copyright {
-    padding: 1em;
-    margin-top: 2rem;
-    text-align: center;
-}
-*/
-
 .Contacts {
-    background-color: tomato;
     position: relative;
     max-width: 100%;
     margin-top: 1rem;
@@ -74,16 +12,51 @@
 .Contacts_Title {
     position: absolute;
     font-size: 2em;
-    transform: translate(12vw, 7vw);
+    transform: translate(5vw, 7vw);
     background-color: white;
     border: 5px solid white;
     z-index: 100;
     max-width: 19rem;
 }
 
-.Restaurant_Map {
-    width: 80%;
-    height: 60%;
-    border-radius: 8%;
-    position: relative;
+.Contacts_SubText {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.Contacts_Socials {
+    width: 16vw;
+    transform: translate(-1.2vw, -16vw);
+    text-align: right;
+}
+
+.Contacts_Questions h4{
+    margin-left: 20px;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Contacts_Questions {
+    transform: translateY(-9vw);
+    text-align: center;
+}
+
+.Contact_Icon {
+    font-size: 1.5em;
+    margin: 0 0.5rem 0 0.5rem;
+    opacity: 0.9;
+}
+
+.Map {
+    max-width: 98%;
+    height: auto;
+    margin-bottom: -4rem;
+    margin-top: 2rem;
+    margin-left: 3rem
+}
+
+.Copyright {
+    padding: 1em;
+    text-align: center;
 }
