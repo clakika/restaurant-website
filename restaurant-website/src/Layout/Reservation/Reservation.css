@@ -126,7 +126,7 @@ textarea {
 
 }
 
-.BookedMessage {
+/*.BookedMessage {
     background-color: whitesmoke;
     opacity: 0.9;
     width: 30vw;
@@ -137,16 +137,17 @@ textarea {
     transform: translate(-15rem, 10rem);
     border: 3px solid rgb(146, 43, 33);
     display: none;
-}
+}*/
 
 .BookedMessage_Text {
     font-size: 1.7em;
     line-height: 2;
     margin-top: 0.4rem;
     z-index: 10000;
+    text-align: center;
 }
 
-.OverlayMessageBooking-visible {
+/*.OverlayMessageBooking-visible {
     opacity:0.8;
     background-color:#ccc;
     position:fixed;
@@ -178,5 +179,9 @@ textarea {
     top:0px;
     left:0px;
     display: none;
-}
+}*/
 
+button a {
+    color: white;
+    text-decoration: none;
+}
