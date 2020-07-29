@@ -1,9 +1,9 @@
 .Services_Container {
     display: flex;
-    max-width: 65rem;
-    height: 37rem;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    padding: 2rem;
 }
 
 .Services_Title {
@@ -24,7 +24,7 @@
     order: 2;
     text-align: center;
     width: 20rem;
-    padding: 2rem;
+    padding: 1rem;
     align-self: center;
     line-height: 1.5;
 }
@@ -38,8 +38,8 @@
 }
 
 .Services_Image {
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: 35%;
 }
 
 

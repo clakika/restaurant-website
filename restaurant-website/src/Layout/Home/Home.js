@@ -7,7 +7,7 @@ import headerImage from '../../img/header-img.png';
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="Home">
                 <div className="Navigation">
                     <img src={logo} 
                          className="NavigationLogo"></img>
@@ -16,6 +16,11 @@ export class Home extends Component {
                         <li className="NavList_Item"><a href="#">reservation</a></li>
                         <li className="NavList_Item"><a href="#">services</a></li>
                         <li className="NavList_Item"><a href="#">contacts</a></li>
+
+                        <i>O</i>
+                        <i>O</i>
+                        <i>O</i>
+                        <i>O</i>
                     </ul>
                 </div>
                 <div className="Header">

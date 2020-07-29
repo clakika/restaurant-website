@@ -1,8 +1,8 @@
-.Contacts_Section {
-    width: 70%;
-    height: 37rem;
+/*.Contacts_Section {
+    max-width: 100%;
+    height: 42.5vw;
     position: relative;
-    margin-top: 3rem;
+    background-color: violet;
 }
 
 .Contacts_Title {
@@ -17,13 +17,14 @@
 
 .Contacts_SubText {
     font-size: 1.2em;
-    text-align: center;
+    text-align: right;
 }
 
 .Contacts_Image {
-    transform: scale(0.7) translate(27vw, -8vw);
-    width: auto;
-    z-index: 10;
+    position: absolute;
+    transform: translate(27vw, -8vw);
+    width: 65%;
+    z-index: 10;   
 }
 
 .Contacts_Socials {
@@ -39,8 +40,50 @@
     font-weight: 600;
 }
 
+.Restaurant_Map {
+    width: 80%;
+    height: 60%;
+    border-radius: 8%;
+    position: relative;
+}
+
+.Map_Icon {
+    position: absolute;
+    transform: translateX(-1em);
+}
+
 .Copyright {
     padding: 1em;
-    margin-top: -2rem;
+    margin-top: 2rem;
     text-align: center;
+}
+*/
+
+.Contacts {
+    background-color: tomato;
+    position: relative;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.Contacts_Image {
+    max-width: 65%;
+    transform: translate(15rem, 2rem);
+}
+
+.Contacts_Title {
+    position: absolute;
+    font-size: 2em;
+    transform: translate(12vw, 7vw);
+    background-color: white;
+    border: 5px solid white;
+    z-index: 100;
+    max-width: 19rem;
+}
+
+.Restaurant_Map {
+    width: 80%;
+    height: 60%;
+    border-radius: 8%;
+    position: relative;
 }
