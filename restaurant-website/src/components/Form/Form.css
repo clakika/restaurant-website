@@ -1,0 +1,164 @@
+.Reservation_Form {
+    text-align: left;
+}
+
+input, label {
+    margin-bottom: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-left: -3rem;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    float: left;
+}
+
+
+
+/*input, label {
+    margin-bottom: 1.7rem;
+}
+
+input {
+    width: 10rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+textarea {
+    height: 8em;
+    max-width: 30em;
+    min-width: 20em;
+    margin-top: -2rem;
+} */
+
+.Reservation_Title {
+    font-size: 2em;
+}
+
+.Reservation_SubText{
+    font-size: 1.2em;
+}
+
+/*.BookBtn {
+    width: 5rem;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    background-color: rgb(146, 43, 33);
+    color: whitesmoke;
+    font-weight: 600;
+    box-shadow: 0px 2px 6px rgb(146, 43, 33);
+    border-radius: 7%;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    cursor: pointer;
+    display: block;
+    float: center;
+}*/
+
+.RequiredFields {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.Asteriks {
+    font-weight: 600;
+
+}
+
+/*buttonCheck = () => {
+        if (this.state.value >= 1) {
+            this.setState({
+                buttonDisabled: 'false'
+            })
+        } 
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+    
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state);
+        this.setState({
+            firstName: '',
+            lastName: '',
+            date: '',
+            time: '',
+            partySize: '',
+            email: '',
+            phoneNumber: '',
+            notes: '',
+        });
+    }*/
+
+    /*constructor(props) {
+        super(props);
+        this.state = {
+            display: 'none'
+        }
+
+        this.state = {
+            OverlayMessageBooking: {
+                opacity: '0.8',
+                backgroundColor: '#ccc',
+                position: 'fixed',
+                width: '100%',
+                height: '100%',
+                top: '0px',
+                left: '0px',
+                display: 'none',
+            },
+
+            BookedMessage: {
+                backgroundColor: 'whitesmoke',
+                opacity: '0.9',
+                width: '30vw',
+                height: '16vw',
+                padding: '1.5rem',
+                margin: '0 auto',
+                position: 'absolute',
+                transform: 'translate(15rem, 10rem)',
+                border: '3px solid rgb(146, 43, 33)',
+                display: 'none',
+            }
+        }
+
+    };*/
+
+    /*ReservationMessageHandler = () => {
+        this.setState({
+            OverlayMessageBooking: {
+                ...this.state.OverlayMessageBooking,
+                display: 'block',
+                transitionTmingFunction: 'cubic-bezier(0.25,0.1,0.25,1)',
+                transition: 'all 5s'
+            },
+
+            BookedMessage: {
+                ...this.state.BookedMessage,
+                display: 'block',
+                transitionTmingFunction: 'cubic-bezier(0.25,0.1,0.25,1)',
+                transition: 'all 5s'
+            }
+        });
+    };*/
+

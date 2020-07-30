@@ -25,105 +25,12 @@
     align-self: center;
 }
 
-.Reservation_Form {
-    height: 70%;
-    padding: 1rem;
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 1fr 10rem 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-input, label {
-    margin-bottom: 1.7rem;
-}
-
-input {
-    margin-top: -1.2rem;
-    width: 10rem;
-}
-
-label {
-    font-weight: 600;
-}
-
-textarea {
-    height: 8em;
-    max-width: 30em;
-    min-width: 20em;
-    margin-top: -2rem;
-}
-
 .Reservation_Title {
     font-size: 2em;
 }
 
 .Reservation_SubText{
     font-size: 1.2em;
-}
-
-.FormLeft {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    margin-left: 3.2rem;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.FormRight {
-    grid-column: 2/-1;
-    grid-row: 1/2;
-    display: flex;
-    margin-left: 1rem;
-    flex-direction: column;
-    align-content: center;
-}
-
-.Reservation_Notes {
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    margin-top: -0.3rem;
-}
-
-.Reservation_Notes label {
-    margin-bottom: 38px;
-}
-
-.BookBtn {
-    grid-column: 1/-1;
-    grid-row: 3/-1;
-    width: 5rem;
-    padding: 10px;
-    border: 2px solid whitesmoke;
-    background-color: rgb(146, 43, 33);
-    color: whitesmoke;
-    font-weight: 600;
-    /*box-shadow: 0px 2px 6px rgb(146, 43, 33);*/
-    border-radius: 7%;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-family: 'EB Garamond', serif;
-    justify-self: center;
-    margin-top: 50px;
-    cursor: pointer;
-
-}
-
-.RequiredFields {
-  font-weight: 600;
-  text-align: left;
-  margin-bottom: -2px;
-}
-
-.Asteriks {
-    font-weight: 600;
-
 }
 
 /*.BookedMessage {
@@ -139,13 +46,13 @@ textarea {
     display: none;
 }*/
 
-.BookedMessage_Text {
+/*.BookedMessage_Text {
     font-size: 1.7em;
     line-height: 2;
     margin-top: 0.4rem;
     z-index: 10000;
     text-align: center;
-}
+}*/
 
 /*.OverlayMessageBooking-visible {
     opacity:0.8;
@@ -180,8 +87,3 @@ textarea {
     left:0px;
     display: none;
 }*/
-
-button a {
-    color: white;
-    text-decoration: none;
-}
