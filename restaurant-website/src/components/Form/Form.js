@@ -3,47 +3,49 @@ import './Form.css';
 
 
 export class Form extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            disabled: true,
+            firstName: "",
+            lastName: "",
+            date: "",
+            time: "",
+            partySize: 0,
+            email: "",
+            phoneNumber: "",
+            notes: ""
+        }
 
-    state = {
-        disabled: true,
-        firstName: "",
-        lastName: "",
-        date: "",
-        time: "",
-        partySize: 0,
-        email: "",
-        phoneNumber: "",
-        notes: ""
-    };  
+        this.handleChange = this.handleChange.bind(this);
+        this.isValid = this.isValid.bind(this);
+        this.ValueChecker = this.ValueChecker.bind(this);
+    };
 
-
+    
     handleChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value 
         });
     };
 
     isValid = () => {
-        if(this.state.firstName <= 1) {
-            console.log(this.state.firstName);
+        if(this.state.firstName.length == 0) {
             return false;
         }
-        if(this.state.lastName <= 1) {
+        if(this.state.lastName.length == 0) {
             return false;
         }
-        if(this.state.date <= 1) {
+        if(this.state.date.length == 0) {
             return false;
         }
-        if(this.state.time <= 1) {
+        if(this.state.time.length == 0) {
             return false;
         }
-        if(this.state.partySize <= 0) {
+        if(this.state.partySize == 0) {
             return false;
         }
-        if(this.state.email <= 10) {
-            return false;
-        }
-        if(this.state.phoneNumber <= 5){
+        if(this.state.phoneNumber.length == 0){
             return false;
         }
 
@@ -51,24 +53,18 @@ export class Form extends Component {
     }
 
     ValueChecker = () => {
-            if(this.isValid) {
-                this.setState({
-                    disabled: false
-                }); 
-            } else {
-                this.setState({
-                    disabled: true
-                });
-            }
+            this.setState({
+                disabled: ! this.isValid()
+            }); 
+        }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
     }
 
-    handleSubmit = e => {
-        e.preventDefault();
-    };
-
     onClick = (e) => {
-        e.preventDefault()
-    };
+        e.preventDefault();   
+    }
 
     render() {
         return (
@@ -145,7 +141,7 @@ export class Form extends Component {
             </form> 
             </div>
         )
-    }
+    };
 }
 
-export default Form
+export default Form;
