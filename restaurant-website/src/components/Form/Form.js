@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import './Form.css';
 
+const emailRegex = RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+
+const formValid = ({ formErrors, ...rest }) => {
+    let valid = true;
+
+    Object.values(formErrors).forEach( val => 
+        {val.length > 0 && (valid = false)});
+
+    Object.values(rest).forEach(val => {
+        val === null && (valid = false);
+    });
+    
+    return valid;
+};
+
 
 export class Form extends Component {
     constructor(props) {
@@ -14,19 +29,49 @@ export class Form extends Component {
             partySize: 0,
             email: "",
             phoneNumber: "",
-            notes: ""
-        }
-
-        this.handleChange = this.handleChange.bind(this);
-        this.isValid = this.isValid.bind(this);
-        this.ValueChecker = this.ValueChecker.bind(this);
-    };
+            notes: "",
+            formErrors: {
+                firstName: "",
+                lastName: "",
+                email: "",
+                phoneNumber: ""},
+            BookingMessage: {
+                fontSize: '17px',
+                marginTop: '2rem',
+                display: 'none'}
+    }
+};
 
     
-    handleChange = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value 
-        });
+    handleChange = e => {
+        e.preventDefault();
+        const { name, value } = e.target;
+        /*this.setState({
+            [e.target.name]: e.target.value
+        });*/
+        let formErrors = { ...this.state.formErrors };
+
+        switch (name) {
+            case 'firstName':
+                formErrors.firstName = value.length < 3  ? "minimum 3 characters required" : "✓";
+                break;
+
+            case 'lastName':
+                formErrors.lastName = value.length < 3 ? "minimum 3 characters required" : "✓";
+                break;
+
+            case 'email':
+                formErrors.email = emailRegex.test(value) ? "✓" : "invalid email address";
+                break;
+
+            case 'phoneNumber':
+                formErrors.phoneNumber = value.length < 15 ? "only numbers required" : "✓";
+                break;
+            default:
+            break;
+        }
+
+        this.setState({ formErrors, [name]: value}, () => console.log(this.state));
     };
 
     isValid = () => {
@@ -63,37 +108,53 @@ export class Form extends Component {
     }
 
     onClick = (e) => {
-        e.preventDefault();   
+        e.preventDefault(); 
+
+        let BookingMessage = this.state.BookingMessage;
+
+        this.setState({
+            BookingMessage: {
+                ...BookingMessage,
+                display: 'block'
+            }
+        });
     }
 
     render() {
+        const { formErrors } = this.state;
+
         return (
             <div>
-                <div className="BookingMessage">
-                    <p>Thank you for your reservation! See you soon!</p>
-                </div>
-                <form className="Reservation_Form" onSubmit={this.handleSubmit} onFocus={this.ValueChecker}>
+                <form className="Reservation_Form" onSubmit={this.handleSubmit} onFocus={this.ValueChecker} noValidate>
                 <label>first name<span className="Asteriks">*</span></label>
                 <input 
+                    className={formErrors.firstName.length > 0 ? "error" : null}
                     type="text" 
                     name="firstName"
-                    value={this.state.firstName} 
+                    noValidate 
                     onChange={this.handleChange} 
                      />
+                     {formErrors.firstName.length > 0 && (
+                    <span className="errorMessageFirstName">{formErrors.email}</span>
+                    )}
                 <br />
                 <label>last name<span className="Asteriks">*</span></label>
                 <input 
+                    className={formErrors.lastName.length > 0 ? "error" : null}
                     type="text" 
                     name="lastName"
-                    value={this.state.lastName} 
+                    noValidate
                     onChange={this.handleChange} 
                      />
+                     {formErrors.lastName.length > 0 && (
+                    <span className="errorMessageLastName">{formErrors.email}</span>
+                    )}
                 <br />
                 <label>date<span className="Asteriks">*</span></label>
                 <input 
                     type="date" 
                     name="date"
-                    value={this.state.date} 
+                    noValidate
                     onChange={this.handleChange} 
                      />
                 <br />
@@ -101,7 +162,7 @@ export class Form extends Component {
                 <input 
                     type="time" 
                     name="time"
-                    value={this.state.time} 
+                    noValidate
                     onChange={this.handleChange} 
                     />
                 <br />
@@ -111,7 +172,7 @@ export class Form extends Component {
                     min="1" 
                     max="30" 
                     name="partySize"
-                    value={this.state.partySize} 
+                    noValidate 
                     onChange={this.handleChange} 
                      />
                 <br />
@@ -119,27 +180,39 @@ export class Form extends Component {
                 <input 
                     type="email" 
                     name="email"
-                    value={this.state.email} 
-                    onChange={this.handleChange} />
+                    noValidate
+                    className={formErrors.email.length > 0 ? "error" : null}
+                    onChange={this.handleChange} 
+                    />
+                    {formErrors.email.length > 0 && (
+                    <span className="errorMessageEmail">{formErrors.email}</span>
+                    )}
                 <br />  
                 <label>phone number<span className="Asteriks">*</span></label>
                 <input 
                     type="tel" 
                     name="phoneNumber"
-                    value={this.state.phoneNumber} 
+                    noValidate
+                    className={formErrors.phoneNumber.length > 0 ? "error" : null}
                     onChange={this.handleChange} 
                     />
+                    {formErrors.phoneNumber.length > 0 && (
+                    <span className="errorMessagePhoneNumber">{formErrors.email}</span>
+                    )}
                 <br />
                 <label>notes on reservation</label>
                 <textarea 
                     type="text" 
                     name="notes"  
-                    value={this.state.notes}
+                    noValidate
                     onChange={this.handleChange} />
                 <br />
                 <button type="button" className="BookBtn" disabled={this.state.disabled}>book</button>
             </form> 
+            <div className={this.state.BookingMessage}>
+                    <p>Thank you for your reservation! See you soon!</p> 
             </div>
+        </div>
         )
     };
 }

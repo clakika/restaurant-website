@@ -23,7 +23,37 @@ input {
     float: left;
 }
 
+.errorMessageFirstName {
+    color: green;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
 
+.errorMessageLastName {
+    color: green;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+}
+
+.errorMessageEmail {
+    color: green;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 2.2rem;
+    margin-top: 5.2rem;
+}
+
+.errorMessagePhoneNumber {
+    color: green;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 5.2rem;
+    margin-top: 6.2rem;
+}
 
 /*input, label {
     margin-bottom: 1.7rem;
@@ -162,3 +192,12 @@ textarea {
         });
     };*/
 
+    .BookBtn {
+        font-size: 12px;
+        padding: 10px;
+        letter-spacing: 2px;
+        font-family: 'EB Garamond', serif;
+        text-transform: uppercase;
+        text-align: center;
+        transform: translate(13.6rem, 1rem);
+    }
