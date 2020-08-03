@@ -15,7 +15,8 @@
 .NavList {
     margin-top: 1.5rem;
     margin-right: 2rem;
-    font-size: 20px
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .Home_Icon{

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Contacts.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +14,8 @@ import contactsImage from '../../img/contacts-image.png';
 export class Contacts extends Component {
     render() {
         return (
-            <div className="Contacts">
+            <Router>
+            <div className="Contacts" id='contacts'>
                 <h2 className="Contacts_Title">share the love for pizza</h2>
                 <img className="Contacts_Image" src={contactsImage}></img>
                 <div className="Contacts_Socials">
@@ -32,6 +34,7 @@ export class Contacts extends Component {
 
                 <footer className="Copyright"> &copy; 2020 Claudia Kiril Cappai</footer>
             </div>
+            </Router>
         )
     }
 }

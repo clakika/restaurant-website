@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from '../../components/Form/Form';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import ReservationImage from '../../img/reservation-image.png';
 import './Reservation.css';
@@ -9,8 +10,9 @@ export class Reservation extends Component {
         render() {
 
             return (
+                <Router>
                 <div>
-                    <div className="Reservation">
+                    <div className="Reservation" id='reservation'>
                         <div className="Reservation_LeftSection">
                             <img src={ReservationImage}
                                 className="Reservation_Image"></img>
@@ -25,6 +27,7 @@ export class Reservation extends Component {
                         </div>
                     </div>
                 </div>
+                </Router>
             );
         }
     }
