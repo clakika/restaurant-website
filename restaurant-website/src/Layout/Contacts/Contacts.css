@@ -6,7 +6,23 @@
 
 .Contacts_Image {
     max-width: 65%;
+    height: auto;
     transform: translate(15rem, 2rem);
+}
+
+@media only screen and (max-width: 1200px) {
+    .Contacts_Image {
+        width:50%;
+    }
+
+    .Contacts_SubText {
+        display: none;
+    }
+
+    .Contacts_Socials {
+        width: 15vw;
+        transform: translate(2vw, 0vw);
+    }
 }
 
 .Contacts_Title {

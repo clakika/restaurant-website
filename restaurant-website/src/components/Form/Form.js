@@ -133,14 +133,15 @@ export class Form extends Component {
                     />
                 <br />
                 <label>notes on reservation</label>
+                <br></br>
                 <textarea 
                     type="text" 
                     name="notes"  
                     onChange={this.handleChange} />
                 <br />
-                <button type="button" className="BookBtn" onClick={() => {this.setState({visible: true});}} disabled={this.state.disabled}>book</button>
-                {this.state.visible ? <Dialog /> : null}
             </form> 
+            <button type="button" className="BookBtn" onClick={() => {this.setState({visible: true});}} disabled={this.state.disabled}>book</button>
+                {this.state.visible ? <Dialog /> : null}
         </div>
         )
     };

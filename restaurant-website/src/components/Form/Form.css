@@ -18,6 +18,11 @@ label {
     font-weight: 600;
 }
 
+textarea{
+    max-width: 20rem;
+    max-height: 10rem;
+}
+
 input {
     display: block;
     float: left;
@@ -199,5 +204,5 @@ textarea {
         font-family: 'EB Garamond', serif;
         text-transform: uppercase;
         text-align: center;
-        transform: translate(13.6rem, 1rem);
+        margin: 1rem auto;
     }

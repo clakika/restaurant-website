@@ -23,7 +23,7 @@
 .Services_Text {
     order: 2;
     text-align: center;
-    width: 20rem;
+    width: auto;
     padding: 1rem;
     align-self: center;
     line-height: 1.5;
@@ -31,6 +31,16 @@
 
 .Services_ImageOne {
     order: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Services_ImageOne {
+        display: none;
+    }
+
+    .Services_ImageTwo {
+        display: none;
+    }
 }
 
 .Services_ImageTwo {

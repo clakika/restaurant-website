@@ -25,6 +25,16 @@
     align-self: center;
 }
 
+@media only screen and (max-width: 1200px) {
+    .Reservation_LeftSection {
+        display: none;
+    }
+
+    .Reservation_RightSection {
+        grid-column: 1/-1;
+    }
+}
+
 .Reservation_Title {
     font-size: 2em;
 }

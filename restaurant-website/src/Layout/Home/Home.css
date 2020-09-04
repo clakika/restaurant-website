@@ -19,11 +19,35 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+    .NavList {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .NavList {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NavList {
+        font-size: 16px;
+    }
+}
+
 .Home_Icon{
     font-size: 0.9em;
     margin: 0 10px 0 10px;
     color: rgb(146, 43, 33);
 }
+
+@media only screen and (max-width: 1200px) {
+    .Home_Icon {
+        display: none;
+    }
+  }
 
 
 .NavList_Item {
@@ -32,6 +56,31 @@
     display: inline-table;
     margin: 0 2rem 0 2rem;
     letter-spacing: 2px;
+    transition: all 2s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+    .NavList_Item {
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NavList_Item {
+        margin: 0 0.7rem 0 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .NavList_Item {
+        margin: 0 0.7rem 0 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .NavList_Item {
+        margin: 0 0.2rem 0 0.6rem;
+    }
 }
 
 .NavList_Item a{
@@ -39,9 +88,14 @@
     color: rgb(146, 43, 33);
 }
 
+.NavList_Item:hover {
+    border-bottom: 1px solid rgb(146, 43, 33);
+}
+
+
 .NavigationLogo {
-    width: 5rem;
-    height: 5rem;
+    max-width: 5rem;
+    max-height: 5rem;
 }
 
 .Header {
@@ -52,13 +106,42 @@
 }
 
 .Header_Image {
-    width: 40%;
-
+    max-width: 40%;
 }
 
 .Header_Title {
     font-size: 4rem;
     align-self: center;
     margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Header_Title {
+        font-size: 2.7rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .Header_Title {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Header_Title {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Header_Title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Header_Title {
+        font-size: 2rem;
+    }
 }
 
