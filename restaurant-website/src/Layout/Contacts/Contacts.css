@@ -12,7 +12,9 @@
 
 @media only screen and (max-width: 1200px) {
     .Contacts_Image {
-        width:50%;
+        width:45%;
+        margin-bottom: 2rem;
+        margin-top: -1rem;
     }
 
     .Contacts_SubText {
@@ -20,8 +22,51 @@
     }
 
     .Contacts_Socials {
-        width: 15vw;
-        transform: translate(2vw, 0vw);
+        width: 20vw;
+        transform: translate(5vw, 0vw);
+        text-align: center;
+    }
+
+    .Map {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .Contacts_Image {
+        width:45%;
+        margin-bottom: 5rem;
+        margin-top: -1rem;
+    }
+
+    .Contacts_SubText {
+        display: none;
+    }
+
+    .Contacts_Socials {
+        width: 20vw;
+        transform: translate(5vw, 0vw);
+        text-align: center;
+    }
+
+    .Map {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Contacts_Image {
+        width:45%;
+        margin-bottom:  5rem;
+        margin-top: -1rem;
+    }
+
+    .Contacts_SubText {
+        display: none;
+    }
+
+    .Contacts_Socials {
+        margin-right: 10rem;
     }
 }
 
@@ -67,12 +112,11 @@
 .Map {
     max-width: 98%;
     height: auto;
-    margin-bottom: -4rem;
-    margin-top: 2rem;
-    margin-left: 3rem
+    margin: 2rem auto;
 }
 
 .Copyright {
     padding: 1em;
+    margin-top: -1rem;
     text-align: center;
 }

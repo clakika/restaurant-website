@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Form from '../../components/Form/Form';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import ReservationImage from '../../img/reservation-image.png';
+import ReservationImage from '../../img/reservation-image.jpg';
 import './Reservation.css';
 
 export class Reservation extends Component {

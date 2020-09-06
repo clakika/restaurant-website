@@ -16,9 +16,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faAt, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 
 
-
 export class Home extends Component {
     render() {
+
         return (
             <Router>
             <div className="Home" id='home'>
