@@ -1,104 +1,5 @@
-.Navigation {
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    
-}
-
-.Navigation > div:first-child {
-    margin-right: auto;
-    visibility: hidden;
-}
-
-.Navigation div:first-child {
-    margin-left: auto;
-}
-
-.NavList {
-    margin-top: 1.5rem;
-    margin-right: 2rem;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .NavList {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .NavList {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .NavList {
-        font-size: 16px;
-    }
-}
-
-.Home_Icon{
-    font-size: 0.9em;
-    margin: 0 10px 0 10px;
-    color: rgb(146, 43, 33);
-}
-
-@media only screen and (max-width: 1200px) {
-    .Home_Icon {
-        display: none;
-    }
-  }
-
-
-.NavList_Item {
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-table;
-    margin: 0 2rem 0 2rem;
-    letter-spacing: 2px;
-    transition: all 2s ease-in-out;
-}
-
-@media only screen and (max-width: 1200px) {
-    .NavList_Item {
-        margin: 0 1rem 0 1rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .NavList_Item {
-        margin: 0 0.7rem 0 0.7rem;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .NavList_Item {
-        margin: 0 0.7rem 0 0.7rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .NavList_Item {
-        margin: 0 0.2rem 0 0.6rem;
-    }
-}
-
-.NavList_Item a{
-    text-decoration: none;
-    color: rgb(146, 43, 33);
-}
-
-.NavList_Item:hover {
-    border-bottom: 1px solid rgb(146, 43, 33);
-}
-
-
-.NavigationLogo {
-    max-width: 5rem;
-    max-height: 5rem;
+.Home {
+    margin-top: 4rem;
 }
 
 .Header {
@@ -147,4 +48,8 @@
         font-size: 2rem;
     }
 }
+
+
+
+
 

@@ -21,7 +21,7 @@ export class Reservation extends Component {
                             <h2 className="Reservation_Title">visit Italy through your palate</h2>
                             <p className="Reservation_SubText">our authentic Italian pizzas are homemade and created with a lot of love.
                             let yourself to pleasure:</p>
-                            <hr className="Line"></hr>
+                            <hr className="LineDivider"></hr>
                             <p className="RequiredFields">Fields with <span className="Asteriks">*</span> are required</p>
                             <Form />
                         </div>

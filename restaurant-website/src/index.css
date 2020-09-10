@@ -4,3 +4,8 @@ body {
   font-family: 'EB Garamond', serif;
   background-color: rgb(250, 245, 240);
 }
+
+body, html {
+  width: auto!important; 
+  overflow-x: hidden!important;
+}

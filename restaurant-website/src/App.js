@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
+import Navigation from './components/Navigation/Navigation';
 import Home from './Layout/Home/Home';
 import Reservation from './Layout/Reservation/Reservation';
 import Services from './Layout/Services/Services';
@@ -13,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <Navigation />
         <div className="App">
           <Home className="App_Component"/>
           <img src={divider}

@@ -8,6 +8,7 @@
     max-width: 65%;
     height: auto;
     transform: translate(15rem, 2rem);
+    z-index: 1;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -38,35 +39,52 @@
         margin-bottom: 5rem;
         margin-top: -1rem;
     }
-
-    .Contacts_SubText {
-        display: none;
-    }
-
-    .Contacts_Socials {
-        width: 20vw;
-        transform: translate(5vw, 0vw);
-        text-align: center;
-    }
-
-    .Map {
-        width: 70%;
-    }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
     .Contacts_Image {
         width:45%;
         margin-bottom:  5rem;
         margin-top: -1rem;
     }
 
-    .Contacts_SubText {
-        display: none;
+    .Contacts_Socials {
+        position: relative;
+        width: auto;
+        display: flex;
     }
 
+    .Contact_IconSocials {
+        transform: translate(1rem, 0rem);
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .Contacts_Socials {
-        margin-right: 10rem;
+        position: relative;
+        width: auto;
+        display: flex;
+    }
+
+    .Contact_IconSocials {
+        transform: translate(5rem, -3rem);
+        margin: 0.5rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .Contacts_Socials {
+        position: relative;
+        width: auto;
+        display: flex;
+    }
+
+    .Contact_IconSocials {
+        transform: translate(5rem, -3rem);
+        margin: 0.5rem;
     }
 }
 
@@ -76,7 +94,7 @@
     transform: translate(5vw, 7vw);
     background-color: white;
     border: 5px solid white;
-    z-index: 100;
+    z-index: 1;
     max-width: 19rem;
 }
 

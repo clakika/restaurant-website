@@ -5,6 +5,8 @@
     margin-bottom: 2rem;
     background-color: white ;
     align-content: center;
+    left: 0;
+    right: 0;
 }
 
 .Reservation_LeftSection {

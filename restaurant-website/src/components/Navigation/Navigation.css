@@ -1,0 +1,431 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem;
+  z-index: 10000;
+  width: 70.7%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.NavBar {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  transition: all .3s ease;
+  z-index: 10000;
+}
+.NavList {
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.NavList_Item {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-table;
+  margin: 0 2rem 0 2rem;
+  letter-spacing: 2px;
+  transition: all .2s ease-in-out;
+  color:rgb(146, 43, 33);
+}
+
+.NavList_Item:hover {
+  border-bottom: 1px solid rgb(146, 43, 33);
+}
+
+.Nav_Icon{
+  font-size: 0.9em;
+  margin: 0 10px 0 10px;
+  color: rgb(146, 43, 33);
+  transition: all .5s ease;
+}
+
+.NavigationLogo {
+  max-width: 5rem;
+  max-height: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+
+}
+
+
+.scrolling-active {
+  background-color: white;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .NavBar {
+  height: 3rem;
+}
+
+.scrolling-active .NavigationLogo {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .NavList_Item {
+      margin: 0 1.5rem 0 1.5rem;
+      font-size: 0.9em;
+  }
+
+  .NavigationLogo {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .NavList_Item {
+      margin: 0 1rem 0 1rem;
+      font-size: 0.8em;
+  }
+
+  .Nav_Icon{
+    font-size: 0.8em;
+    margin: 0 5px 0 5px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .NavList_Item {
+      margin: 0 0.6rem 0 0.6rem;
+  }
+
+  .Nav_Icon{
+    font-size: 0.7em;
+
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .NavigationLogo {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Navigation {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .NavList_Item {
+      margin: 0 0.6rem 0 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .NavList {
+      margin-left: -2rem;
+  }
+
+  .NavList_Item {
+    font-size: 0.68em;
+  }
+
+  .Nav_Icon {
+    margin-right: 0 3px 0 3px;
+  }
+
+  .NavigationLogo {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+  }
+}
+
+
+/*.Navigation > div:first-child {
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.Navigation div:first-child {
+    margin-left: auto;
+}
+
+
+.Nav_Icon{
+  font-size: 0.9em;
+  margin: 0 10px 0 10px;
+  color: rgb(146, 43, 33);
+  transition: all .5s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Nav_Icon {
+      display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .NavList {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .NavList {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NavList {
+        font-size: 16px;
+    }
+}
+
+
+.NavList_Item {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-table;
+    margin: 0 2rem 0 2rem;
+    letter-spacing: 2px;
+    transition: all 2s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+    .NavList_Item {
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NavList_Item {
+        margin: 0 0.7rem 0 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .NavList_Item {
+        margin: 0 0.7rem 0 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .NavList_Item {
+        margin: 0 0.2rem 0 0.6rem;
+    }
+}
+
+.NavList_Item a{
+    text-decoration: none;
+    color: rgb(146, 43, 33);
+}
+
+.NavList_Item:hover {
+    border-bottom: 1px solid rgb(146, 43, 33);
+}
+
+
+.NavigationLogo {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-right: 8rem;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .NavigationLogo {
+    margin-right: -1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .NavigationLogo {
+    margin-right: 4rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .NavigationLogo{
+      margin: 0 0.7rem 0 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .NavigationLogo {
+      margin: 0 0.7rem 0 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .NavigationLogo {
+      margin: 0 0.2rem 0 0.6rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .NavList {
+      background-color: rgb(173, 139, 133);
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #f0ece3;
+      z-index: 100;
+      font-size: 2em;
+      line-height: 6rem;
+      transition: all 0.4s ease-out;
+      clip-path: circle(100px at 100% -15%);
+      -webkit-clip-path: circle(100px at 100% -15%);
+      pointer-events: none;
+    }
+  
+    .NavList.open {
+      clip-path: circle(1100px at 100% -15%);
+      -webkit-clip-path: circle(1100px at 100% -15%);
+      pointer-events: all;
+    }
+  
+    .NavList_Item {
+      font-size: 1.5em;
+    }
+  
+    .Line {
+      width: 1.5rem;
+      height: 3px;
+      margin: 5px;
+      background-color: rgb(146, 43, 33);
+      border-radius: 3px;
+      transition: all 0.2s ease-in-out;
+    }
+  
+    .MobileNav {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      z-index: 1000;
+    }
+
+    .SideBar {
+      width: 100%;
+      height: 20rem;
+      background-color: brown;
+      right: 0;
+    }
+  
+    .Navigation__MenuIcons {
+      margin-right: 4rem;
+      margin-top: 0.7rem;
+    }
+  
+    .MobileNav.open .Line {
+      background-color: rgb(146, 43, 33);
+    }
+  
+    .MobileNav.open .Line:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 5px);
+    }
+  
+    .MobileNav.open .Line:nth-child(2) {
+      transform: translateX(-2rem);
+      background:transparent;
+    }
+  
+    .MobileNav.open .Line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -5px);
+    }
+  
+    .NavList .NavList_Item {
+      opacity: 0;
+      font-size: 1.5em;
+      font-family: 'Lobster Two', cursive;
+    }
+  
+    .NavList .NavList_Item:hover {
+      font-style: italic;
+    }
+  
+    .NavList .NavList_Item.fade {
+      opacity: 1;
+    }
+      
+  }
+
+
+.scrolling-active {
+  background-color: white;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .NavBar a {
+  color: #313131;
+}
+
+.scrolling-active .NavBar {
+  height: 3rem;
+}
+
+.scrolling-active .NavigationLogo {
+    width: 3rem;
+    height: 3rem;
+    margin-left: -17rem;
+    margin-top: 0.7rem;
+}
+
+.scrolling-active .NavList_Item {
+  color: rgb(146, 43, 33);
+  font-size: 20px;
+}
+
+
+.scrolling-active .NavList_Item::after {
+  color: rgb(146, 43, 33);
+}
+
+.scrolling-active .Nav_Icon {
+    font-size: 0.8em;
+    margin: 0 10px 0 10px;
+    color: rgb(146, 43, 33);
+}
+
+@media screen and (max-width: 750px) {
+  .scrolling-active {
+      background-color: white;
+      box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+  }
+
+  .scrolling-active .nav a {
+      color: #313131;
+  }
+
+  .scrolling-active nav {
+      height: 3rem;
+  }
+
+  .scrolling-active .Line {
+    background-color: rgb(173, 139, 133);
+
+  }
+
+  .scrolling-active .NavList_Item  {
+      font-size: 1.5em;
+  }
+
+}*/
+
