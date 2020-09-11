@@ -1,40 +1,11 @@
 .Reservation {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
     margin-top: 1rem;
     margin-bottom: 2rem;
     background-color: white ;
     align-content: center;
     left: 0;
     right: 0;
-}
-
-.Reservation_LeftSection {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    grid-column: 1/2;
-}
-
-.Reservation_RightSection {
     text-align: center;
-    grid-column: 2/3;
-}
-
-.Reservation_Image {
-    max-width: 70%;
-    height: auto;
-    align-self: center;
-}
-
-@media only screen and (max-width: 1200px) {
-    .Reservation_LeftSection {
-        display: none;
-    }
-
-    .Reservation_RightSection {
-        grid-column: 1/-1;
-    }
 }
 
 .Reservation_Title {
@@ -44,58 +15,3 @@
 .Reservation_SubText{
     font-size: 1.2em;
 }
-
-/*.BookedMessage {
-    background-color: whitesmoke;
-    opacity: 0.9;
-    width: 30vw;
-    height: 16vw;
-    padding: 1.5rem;
-    margin: 0 auto;
-    position: absolute;
-    transform: translate(-15rem, 10rem);
-    border: 3px solid rgb(146, 43, 33);
-    display: none;
-}*/
-
-/*.BookedMessage_Text {
-    font-size: 1.7em;
-    line-height: 2;
-    margin-top: 0.4rem;
-    z-index: 10000;
-    text-align: center;
-}*/
-
-/*.OverlayMessageBooking-visible {
-    opacity:0.8;
-    background-color:#ccc;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    display: block;
-}
-
-
-.OverlayMessageBooking-visible {
-    opacity:0.8;
-    background-color:#ccc;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    display: block;
-}
-
-.OverlayMessageBooking-visible {
-    opacity:0.8;
-    background-color:#ccc;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    display: none;
-}*/

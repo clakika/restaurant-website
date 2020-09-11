@@ -7,29 +7,22 @@ import './Reservation.css';
 
 export class Reservation extends Component {
 
-        render() {
+    render() {
 
-            return (
-                <Router>
+        return (
+            <Router>
                 <div>
                     <div className="Reservation" id='reservation'>
-                        <div className="Reservation_LeftSection">
-                            <img src={ReservationImage}
-                                className="Reservation_Image"></img>
-                        </div>
-                        <div className="Reservation_RightSection">
-                            <h2 className="Reservation_Title">visit Italy through your palate</h2>
-                            <p className="Reservation_SubText">our authentic Italian pizzas are homemade and created with a lot of love.
+                        <h2 className="Reservation_Title">visit Italy through your palate</h2>
+                        <p className="Reservation_SubText">our authentic Italian pizzas are homemade and created with a lot of love.
                             let yourself to pleasure:</p>
-                            <hr className="LineDivider"></hr>
-                            <p className="RequiredFields">Fields with <span className="Asteriks">*</span> are required</p>
-                            <Form />
-                        </div>
+                        <hr className="LineDivider"></hr>
+                        <Form />
                     </div>
                 </div>
-                </Router>
-            );
-        }
+            </Router>
+        );
     }
+}
 
-    export default Reservation;
+export default Reservation;
