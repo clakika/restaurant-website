@@ -19,6 +19,8 @@ export class Navigation extends Component {
             let windowPosition = window.scrollY > 0;
 
             nav.classList.toggle("scrolling-active", windowPosition);
+
+            event.preventDefault();
         });
     
         return (

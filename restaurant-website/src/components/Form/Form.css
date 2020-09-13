@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-input, label {
+.input, label {
     margin-bottom: 0.2rem;
     margin-top: 0.5rem;
     margin-left: -12rem;
@@ -77,36 +77,42 @@ textarea:focus{
     }
 }
 
-input {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 2px solid rgb(190, 174, 158);
-    opacity: 0.5;
-    transition: all .2s ease;
-    font-family: 'EB Garamond', serif;
-    font-size: 0.9em;
-    display: block;
+.input {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 2px solid rgb(190, 174, 158) !important;
+    opacity: 0.5 !important;
+    transition: all .2s ease !important;
+    font-family: 'EB Garamond', serif !important;
+    font-size: 0.9em !important;
+    display: block !important;
     
 }
 
-input:focus {
-    outline: none;
-    opacity: 1;
+.input:focus {
+    outline: none !important;
+    opacity: 1 !important;
 }
 
-input:valid {
+.input:valid {
     border-bottom: 2px solid #82b21e;
     opacity: 1;
     background-color: none;
 }
 
-input:active {
+.input:active {
     background-color: none;
 }
 
-input.error {
+.input.error {
     border-bottom: 2px solid rgb(146, 43, 33);
+}
+
+.InputDate {
+    margin-left: -5.2rem;
+    width: 4.5rem;
+    margin-bottom: 1.4rem !important;
 }
 
 .RequiredFields {
@@ -178,11 +184,31 @@ input.error {
     padding: 0.5rem;
 }
 
+.ErrorDate {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(16rem, -3.6rem);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(146, 42, 33, 0.534);
+    padding: 0.5rem;
+}
+
+.ErrorTime {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(16rem, -3.6rem);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(146, 42, 33, 0.534);
+    padding: 0.5rem;
+}
+
 .Error.error {
     opacity: 1;
 }
 
-.BookingMessage {
+.BookingMessage.enable {
     font-size: 15px;
     margin-top: 2rem;
     margin-left: 1.5rem;
@@ -200,4 +226,3 @@ input.error {
     display: block;
     transform: translateY(0rem);
 }
-
