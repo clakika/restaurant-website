@@ -44,39 +44,6 @@ textarea:focus{
     opacity: 1;
 }
 
-
-@media only screen and (max-width: 1200px) {
-    textarea {
-        width: 26rem;
-        height: 20rem;
-
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    textarea {
-        width: 15rem;
-        height: 40rem;
-
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    textarea {
-        width: 20rem;
-        height: 40rem;
-
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    textarea {
-        width: 12rem;
-        height: 40rem;
-
-    }
-}
-
 .input {
     border-top: none !important;
     border-right: none !important;
@@ -135,6 +102,7 @@ textarea:focus{
     margin-top: 2rem;
     cursor: not-allowed;
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .BookBtn.enable {
@@ -204,14 +172,24 @@ textarea:focus{
     padding: 0.5rem;
 }
 
+.ErrorSize {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(16rem, -3.6rem);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(146, 42, 33, 0.534);
+    padding: 0.5rem;
+}
+
 .Error.error {
     opacity: 1;
 }
 
-.BookingMessage.enable {
+.BookingMessage {
     font-size: 15px;
     margin-top: 2rem;
-    margin-left: 1.5rem;
+    margin-left: -0.2rem;
     background-color: rgba(146, 42, 33, 0.534);
     color: whitesmoke;
     padding: 1rem;
@@ -221,8 +199,41 @@ textarea:focus{
     transition: all 1s ease-in-out;
 }
 
+
+
 .BookingMessage.open {
     opacity: 1;
     display: block;
     transform: translateY(0rem);
+}
+
+@media only screen and (max-width: 1200px) {
+    .InputDate {
+        margin-left: -5.2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .InputDate {
+        margin-left: -5.2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .InputDate {
+        margin-left: -5.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .InputDate {
+        margin-left: -5.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .InputDate {
+        margin-left: -5.2rem;
+    }
 }

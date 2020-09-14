@@ -153,7 +153,7 @@ export class Form extends Component {
                             const errorTime = document.querySelector(".ErrorTime");
                             const time = document.querySelector(".InputTime");
 
-                            if (time.value.length == 0) {
+                            if (time.value == 0) {
                                 errorTime.classList.add("error");
                                 this.setState({time: false})
                             }
@@ -177,6 +177,7 @@ export class Form extends Component {
                         required
                     />
                     <br />
+                    <p className="ErrorSize Error">Minimum party size is 1</p>
                     <label>email<span className="Asteriks">*</span></label>
                     <input
                         className="input InputEmail"
