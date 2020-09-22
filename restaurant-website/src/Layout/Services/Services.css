@@ -52,5 +52,19 @@
     width: 35%;
 }
 
+@media only screen and (max-width: 493px) {
+    .Services_Title {
+        font-size: 1.5em;
+    }
+
+    .Services_Text{
+        font-size: 1em;
+    }
+
+    .Services_Container {
+        margin: -3rem 0 -3rem 0;
+    }
+  }
+
 
 

@@ -48,6 +48,7 @@ export class Form extends Component {
         
         return (
             <div className="FormBox">
+                <p className="RequiredFields">Fields with <span className="Asteriks">*</span> are required</p>
                 <form className="Reservation_Form" onChange={() => {
                     const button = document.querySelector(".BookBtn");
                     const messageBooked = document.querySelector(".BookingMessage");
@@ -197,8 +198,6 @@ export class Form extends Component {
                                 errorEmail.classList.remove("error");
                                 this.setState({email: true})
                             }
-
-                            console.log(this.state.email);
                         }}
                         required
                     />
@@ -223,7 +222,6 @@ export class Form extends Component {
                                 errorNumber.classList.remove("error");
                                 this.setState({phoneNumber: true})
                             }
-                            console.log(this.state.phoneNumber);
                         }
                     }
                         required
@@ -237,7 +235,6 @@ export class Form extends Component {
                         onChange={this.handleChange} />
                     <br />
                 </form>
-                <p className="RequiredFields">Fields with <span className="Asteriks">*</span> are required</p>
                 <button
                     type="button"
                     className="BookBtn"

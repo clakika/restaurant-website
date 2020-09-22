@@ -167,4 +167,63 @@
         transform: translate(2rem, -8rem);
         margin: 0.5rem;
     }
+
+    .Map {
+        max-width: 98%;
+        height: auto;
+        margin: 2rem 0 2rem 0;
+    }
 }
+
+@media only screen and (max-width: 490px) {
+    .Contact_Icon {
+        font-size: 1.2em;
+    }
+
+    .Contacts_TitleContainer {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .Contacts_Title {
+       font-size: 1.5em;
+       transform: translate(7vw, 7vw);
+    }
+
+    
+    .Contacts_SubText {
+        font-size: 1em;;
+    }
+
+    .Contacts_Image {
+        width:45%;
+        margin-left: -2rem;
+    }
+
+    .Contacts_Questions h4{
+        font-size: 1.5em;
+        
+    }
+}
+
+@media only screen and (max-width: 398px) {
+    .Contacts_Title {
+        font-size: 1.4em;
+        transform: translate(1vw, 4vw);
+     }
+ 
+     
+     .Contacts_SubText {
+         font-size: 1em;;
+     }
+ 
+     .Contacts_Image {
+         width:45%;
+         margin-left: -5rem;
+     }
+
+     .Contact_IconSocials {
+        transform: translate(-1rem, -7rem);
+        margin: 0.5rem;
+    }
+  }

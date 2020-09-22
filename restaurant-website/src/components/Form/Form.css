@@ -3,17 +3,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 0 auto;
 }
 
 .Reservation_Form {
-    margin: 0 auto;
+    margin-left: -10rem;
 }
 
 .input, label {
     margin-bottom: 0.2rem;
     margin-top: 0.5rem;
-    margin-left: -12rem;
 }
 
 
@@ -55,6 +54,11 @@ textarea:focus{
     font-size: 0.9em !important;
     display: block !important;
     
+}
+
+.InputSize {
+    width: 40px;
+    text-align: center;
 }
 
 .input:focus {
@@ -237,3 +241,17 @@ textarea:focus{
         margin-left: -5.2rem;
     }
 }
+
+@media only screen and (max-width: 398px) {
+    label {
+        font-size: 1em;
+    }
+     
+    input {
+        width: 8rem;
+    }
+
+    .Reservation_Form {
+        margin-left: -8rem;
+    }
+  }

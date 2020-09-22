@@ -27,6 +27,7 @@ class App extends Component {
               className="Divider"></img>
           <Contacts className="App_Component"/>
         </div>
+        <footer className="Copyright"> &copy; 2020 Claudia Kiril Cappai</footer>
         </Router>
     );
   }
