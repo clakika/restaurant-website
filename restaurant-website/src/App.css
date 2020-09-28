@@ -6,7 +6,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
+  width: 90vw;
+  box-shadow: 3px 9px 0.9rem rgba(0, 0, 0, 0.568);
   background-color: white;
   margin: 0 auto;
   left: 0;
@@ -14,12 +15,19 @@
 }
 
 footer {
-  color: rgb(146, 43, 33);
+  color: white;
+
 }
 
 @media only screen and (max-width: 800px) {
   .App {
       width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+      width: 100%;
   }
 }
 

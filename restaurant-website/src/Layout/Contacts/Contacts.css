@@ -11,6 +11,11 @@
     z-index: 1;
 }
 
+footer {
+    color: rgb(146, 43, 33);
+  
+  }
+
 .Contacts_Title {
     position: absolute;
     font-size: 2em;
@@ -51,9 +56,18 @@
 }
 
 .Map {
-    max-width: 98%;
+    width: 28rem;
     height: auto;
-    margin: 2rem auto;
+    border-radius: 1px;
+    margin: 10px 0 10px 0;
+
+}
+
+.MapContainer {
+    margin: 3rem auto;
+    padding: 0rem;
+    border: 3px solid rgb(146, 43, 33);
+    width: 30rem;
 }
 
 .Copyright {
@@ -79,9 +93,6 @@
         text-align: center;
     }
 
-    .Map {
-        width: 70%;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -169,9 +180,12 @@
     }
 
     .Map {
-        max-width: 98%;
-        height: auto;
-        margin: 2rem 0 2rem 0;
+        width: 18rem;
+    
+    }
+    
+    .MapContainer {
+        width: 20rem;
     }
 }
 
