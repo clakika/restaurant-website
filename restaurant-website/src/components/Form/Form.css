@@ -177,16 +177,22 @@ input {
     transform: translateY(0rem);
 }
 
+@media only screen and (min-width: 1200px) {
+    .InputDate {
+        margin-left: -8rem;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .InputDate {
-        margin-left: -5.2rem;
+        margin-left: -8rem;
     }
 }
 
 @media only screen and (max-width: 1000px) {
 
     .InputDate {
-        margin-left: -5.2rem;
+        margin-left: -8rem;
     }
 }
 
