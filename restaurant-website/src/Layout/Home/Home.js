@@ -13,7 +13,7 @@ export class Home extends Component {
             <Router>
                 <div className="Home" id="home">
                     <div className="Header">
-                        <h1 className="Header_Title">Amore per la bizza</h1>
+                        <h1 className="Header_Title">Amore per la pizza</h1>
                         <img className="Header_Image"
                             src={headerImage}></img>
                     </div>
