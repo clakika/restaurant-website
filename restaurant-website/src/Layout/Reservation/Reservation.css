@@ -20,10 +20,12 @@
 @media only screen and (max-width: 493px) {
     .Reservation_Title {
         font-size: 1.5em;
+        
     }
 
     .Reservation_SubText{
         font-size: 1em;
+        
     }
 
     .LineDivider {

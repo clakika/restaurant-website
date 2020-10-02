@@ -205,8 +205,11 @@ input {
 @media only screen and (max-width: 601px) {
 
     .Reservation_Form {
-        margin-left: -14px;
-        
+        margin-left: -26px;   
+    }
+
+    .FormBox {
+        width: 21rem;
     }
 
     .InputDate {
