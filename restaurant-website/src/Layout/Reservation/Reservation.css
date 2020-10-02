@@ -6,6 +6,7 @@
     left: 0;
     right: 0;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .Reservation_Title {
@@ -23,6 +24,10 @@
 
     .Reservation_SubText{
         font-size: 1em;
+    }
+
+    .LineDivider {
+        width: 50%;
     }
   }
 

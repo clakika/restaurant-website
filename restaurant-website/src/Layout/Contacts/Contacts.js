@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faPinterest, faTwitter, faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faAt} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faAt, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 
 
 import contactsImage from '../../img/contacts-image.png';
@@ -28,9 +28,10 @@ export class Contacts extends Component {
                         <FontAwesomeIcon icon={faTwitter} className="Contact_Icon Contact_IconSocials"/>
                     </div>
                     <div className="Contacts_Questions">
-                        <h4 className="Contacts_QuestionsText">any questions?</h4>
+                        <h4 className="Contacts_QuestionsText"><i>any questions?</i></h4>
                         <p className="Contacts_Items"><FontAwesomeIcon icon={faAt} className="Contact_Icon"/>amoreperlapizza@italia.it</p>
-                        <p className="Contacts_Items"><FontAwesomeIcon icon={faPhone} className="Contact_Icon"/>+123 456 789</p>
+                        <p className="Contacts_Items"><FontAwesomeIcon icon={faPhone} className="Contact_Icon"/>+49 123 456 789</p>
+                        <p className="Contacts_Items"><FontAwesomeIcon icon={faMapMarkedAlt} className="Contact_Icon"/>Genslerstraße 37, 13405 Berlin</p>
                         <div className="MapContainer">
                             <iframe className="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.6327701190617!2d13.41111195129006!3d52.52198464373556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1f40519cdb%3A0xb071e6aa2e903088!2sAlexanderplatz!5e0!3m2!1sit!2sde!4v1596010957566!5m2!1sit!2sde" width={600} height={450} frameBorder={0} style={{border: 0}} allowFullScreen aria-hidden="false" tabIndex={0} />
                         </div>

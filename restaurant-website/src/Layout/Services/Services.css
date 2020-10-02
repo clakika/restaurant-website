@@ -11,13 +11,15 @@
     background-color: white;
 }
 
-.Services_SubText {
-    font-size: 1.5em;
-}
-
 .Services_Link {
     font-weight: 600;
-    color: rgb(146, 43, 33)
+    color: rgb(146, 43, 33);
+    text-decoration: none;
+    transition: all .5s ease-in-out
+}
+
+.Services_Link:hover {
+    border-bottom: 2px dotted rgb(146, 43, 33);
 }
 
 .Services_Text {
@@ -27,10 +29,16 @@
     padding: 1rem;
     align-self: center;
     line-height: 1.5;
+    font-size: 1.2em;
 }
+
 
 .Services_ImageOne {
     order: 1;
+}
+
+.Services_Image {
+    border: 2px solid rgb(146, 43, 33);
 }
 
 @media only screen and (max-width: 1200px) {
