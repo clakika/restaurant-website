@@ -205,7 +205,7 @@ input {
 @media only screen and (max-width: 601px) {
 
     .Reservation_Form {
-        margin-left: 0rem;
+        margin-left: -14px;
         
     }
 
